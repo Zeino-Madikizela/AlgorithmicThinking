@@ -10,7 +10,6 @@ public class BinarySearch {
         int target = input.nextInt();
 
         System.out.println("The target " + target + " is in index : " + binarySearch(myArray, target) );
-
     }
 
     public static int binarySearch(int[] array, int target)
