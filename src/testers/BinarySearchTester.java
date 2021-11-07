@@ -25,7 +25,7 @@ public class BinarySearchTester
            result += "Test 2 \t:\t Passed\n";
 
        else if(binarySearch.binarySearch(myArray,3001) != 6)
-           result += "Test 2 \t:\t Failed - Target 3001 should be\n";
+           result += "Test 2 \t:\t Failed - Target 3001 should be 6\n";
 
        if(binarySearch.binarySearch(myArray, 3255) == 9)
            result += "Test 3 \t:\t Passed\n";
