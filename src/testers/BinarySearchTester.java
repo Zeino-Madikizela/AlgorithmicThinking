@@ -14,6 +14,9 @@ public class BinarySearchTester
        String result = "";
        String reason = "";
 
+       /**
+        * Tests for an array with even number of elements
+        */
        //Target 1
        if(binarySearch.binarySearch(myArray,1) == 0)
            result += "Test 1 \t:\t Passed\n";
@@ -39,7 +42,7 @@ public class BinarySearchTester
        else if(binarySearch.binarySearch(myArray, 4548) != -1)
            result += "Test 4 \t:\t Failed - Target 4548 should be -1\n";
 
-       System.out.println(result);
+       System.out.println("Even number of elements\n" + result);
    }
 
    public static void tests(int[] array, String testTittle,String explanation ,int result)

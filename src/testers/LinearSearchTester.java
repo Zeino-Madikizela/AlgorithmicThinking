@@ -32,7 +32,7 @@ public class LinearSearchTester
         if(linSearchObj.linearSearch(myArray, 456) == -1)
             result += "Test 4 \t:\t Passed\n";
         else
-            result += "Test 4 \t:\t Failed -> 456 does not exist thus the code should return -1\n";
+            result += "Test 4 \t:\t Failed -> 456 does not exist, code returned " + linSearchObj.linearSearch(myArray, 456) + " but should return -1\n";
 
         System.out.println(result);
     }
