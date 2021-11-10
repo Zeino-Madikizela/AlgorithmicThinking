@@ -9,6 +9,8 @@ public class BinarySearchTester
    {
        int[] targetArray;
        int[] evenArray = {1, 2, 3, 4, 5, 6, 3001, 3151, 3251, 3255};
+       int[] arrayOfone = {5};
+
        BinarySearch binarySearch = new BinarySearch(evenArray);
        Scanner input = new Scanner(System.in);
 
@@ -80,7 +82,26 @@ public class BinarySearchTester
 
        System.out.println("\nOdd number of elements\n" + result);
 
+
+       targetArray = arrayOfone;
+
        System.out.println("\nTests for an array of 1 element");
+       result = "";
+
+       //Target 1
+       if(binarySearch.binarySearch(targetArray,5) == 0)
+           result += "Test 1 \t:\t Passed\n";
+
+       else if(binarySearch.binarySearch(targetArray,5) != 0)
+           result += "Test 1 \t:\t Failed - Target 1 should be 0\n";
+
+       if (binarySearch.binarySearch(targetArray, 4548) == -1)
+           result += "Test 4 \t:\t Passed";
+
+       else if(binarySearch.binarySearch(targetArray, 4548) != -1)
+           result += "Test 4 \t:\t Failed - Target 4548 should be -1\n";
+
+       System.out.println("\nArray of one element\n" + result);
 
    }
 
