@@ -9,7 +9,7 @@ public class SelectionSort {
         int[] myArray = {9, 19, 2, 4};
 
         int[] sortedArray = selectionSort(myArray);
-        System.out.println("The sorted array : ");
+        System.out.print("The sorted array : ");
         for (int each : sortedArray)
             System.out.print(each + " ");
 
